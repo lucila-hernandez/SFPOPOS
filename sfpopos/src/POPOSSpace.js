@@ -1,7 +1,9 @@
+import './POPOSSpace.css'
+
 function POPOSSpace(props) {
     const { name, image, address } = props
     return (
-      <div>
+      <div className="POPOSSpace">
         <h1>{name}</h1>
         <div>{address}</div>
         <img
