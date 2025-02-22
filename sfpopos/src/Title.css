@@ -2,14 +2,18 @@
     box-sizing: border-box;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
     padding: 1em;
     margin-bottom: 2em;
     background-color: rgb(192, 45, 26);
     color: #fff;
-  }
+}
 
-  .Title-Subtitle {
+.Title-Subtitle {
     color: rgba(255, 255, 255, 0.75);
-  }
+    margin-top: 0.5em; 
+    text-align: center; 
+}
