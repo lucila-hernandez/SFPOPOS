@@ -6,13 +6,16 @@ function POPOSSpace({ id, name, address, image, hours }) {
   return (
     <div className="POPOSSpace">
       <Link to={`/details/${id}`}>
-        <h2>{name}</h2>
+        <h2 className="POPOSSpace-title">{name}</h2>
         <img src={`${process.env.PUBLIC_URL}/images/${image}`} width="300" height="300" alt={name} />
-        <p>{address}</p>
-        <p>{hours}</p>
       </Link>
+      <div className="POPOSSpace-info">
+        <div>{address}</div>
+        <div>{hours}</div>
+      </div>
     </div>
   );
 }
 
 export default POPOSSpace;
+
